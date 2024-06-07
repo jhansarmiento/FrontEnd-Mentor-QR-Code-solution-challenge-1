@@ -1,0 +1,77 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    display: none;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--Light-gray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 1em;
+    
+}
+
+.card {
+    background-color: var(--white);
+    width: 320px;
+    height: 497px;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+}
+
+.text-container {
+    width: 288px;
+    height: 129px;
+    margin: 24px 16px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container h2 {
+    text-align: center;
+    color: var(--Dark-blue);
+    width: 288px;
+    height: 56px;
+    margin-bottom: 16px;
+}
+
+.text-container p {
+    text-align: center;
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    width: 256px;
+}
+
